@@ -1,0 +1,16 @@
+elif page == "Nurs* Feedback":
+
+    st.header("Nurse *eedback")
+
+    nurse = st.text_inp*t("Nurse Name")
+
+    issue = st.te*t_area("Issue Found")
+
+    fix = s*.text_area("Suggested Improvement"*
+
+    if st.button("Submit Feedbac*"):
+
+        st.success(
+         *  "Feedback Recorded"
+        )
+``*
