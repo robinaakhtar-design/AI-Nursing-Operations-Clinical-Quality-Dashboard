@@ -1,0 +1,25 @@
+elif page == "Deployment*Plan":
+
+    st.header("Clinical De*loyment Plan")
+
+    st.markdown(""*
+
+### Location
+Ward Nurse Station
+*### Users
+- Staff Nurses
+- Charge *urses
+- Nurse Managers
+
+### Usage
+*1. Morning Handover
+2. Mid-Shift M*nitoring
+3. Incident Escalation
+4. End-of-Shift Review
+
+### Update Frequency
+Real-Time
+
+### Purpose
+Rapid identification of clinical priorities.
+""")
