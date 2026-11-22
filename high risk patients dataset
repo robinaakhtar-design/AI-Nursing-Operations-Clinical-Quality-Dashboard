@@ -1,0 +1,15 @@
+if "patients" not in st.session_state:
+
+    st.session_state.patients = pd.DataFrame([
+
+        ["Bed 01","High Fall Risk","Immediate Review"],
+        ["Bed 05","Pressure Injury Risk","Reposition Patient"],
+        ["Bed 08","Medication Alert","Medication Reconciliation"],
+        ["Bed 12","CAUTI Risk","Catheter Assessment"]
+
+    ],
+    columns=[
+        "Patient",
+        "Risk",
+        "Action Required"
+    ])
