@@ -1,0 +1,5 @@
+if st.sidebar.button("🔄 Refresh Dashboard"):
+    st.rerun()
+
+if st.sidebar.button("♻ Reset Filters"):
+    st.session_state.search = ""
