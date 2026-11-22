@@ -1,0 +1,22 @@
+elif page == "Patient Safety Alerts":
+
+    st.header("🚨 Patient Safety Alerts")
+
+    patients = st.session_state.patients
+
+    for _, row in patients.iterrows():
+
+        st.error(
+            f"""
+            {row['Patient']}
+
+            Risk: {row['Risk']}
+
+            Action: {row['Action Required']}
+            """
+        )
+
+    st.dataframe(
+        patients,
+        use_container_width=True
+    )
