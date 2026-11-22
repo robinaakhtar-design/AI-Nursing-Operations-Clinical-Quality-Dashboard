@@ -1,0 +1,16 @@
+if "quality_metrics" not in st.session_state:
+
+    st.session_state.quality_metrics = pd.DataFrame([
+        ["Falls Rate",1,"0 per shift"],
+        ["Pressure Injuries",0,"0"],
+        ["Hand Hygiene Compliance",94,"≥90%"],
+        ["Medication Errors",2,"0"],
+        ["CAUTI Rate",1.5,"<2/1000 catheter days"],
+        ["CLABSI Rate",0.8,"<1/1000 line days"],
+        ["Nurse Patient Ratio","1:4","1:4"]
+    ],
+    columns=[
+        "Metric",
+        "Current",
+        "Target"
+    ])
