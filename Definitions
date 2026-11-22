@@ -1,0 +1,18 @@
+with st.expander("Metric Definitions"):
+
+    st.markdown("""
+### CAUTI Rate
+Catheter-associated urinary tract infections per 1000 catheter-days.
+
+### CLABSI Rate
+Central line-associated bloodstream infections per 1000 line-days.
+
+### Nurse Patient Ratio
+Number of assigned patients per nurse.
+
+### Falls Rate
+Patient falls recorded during shift.
+
+### Medication Errors
+Medication administration incidents recorded.
+""")
