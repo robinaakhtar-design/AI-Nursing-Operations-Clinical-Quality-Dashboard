@@ -1,0 +1,27 @@
+elif page == "Clinical Quality Dashboard":
+
+    st.header("Clinical Quality Dashboard")
+
+    quality = st.session_state.quality_metrics
+
+    st.dataframe(
+        quality,
+        use_container_width=True
+    )
+
+    fig = px.bar(
+        quality,
+        x="Metric",
+        y="Current",
+        color="Metric",
+        title="Nursing Quality Indicators"
+    )
+
+    st.plotly_chart(
+        fig,
+        use_container_width=True
+    )
+
+    st.info(
+        "Target values are displayed beside every metric."
+    )
