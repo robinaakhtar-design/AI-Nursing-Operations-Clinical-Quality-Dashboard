@@ -1,0 +1,25 @@
+elif page == "Shift Handover":
+
+    st.header("Morning Shift Handover")
+
+    st.subheader("Staffing Summary")
+
+    st.write(
+        f"On Duty Staff: {len(st.session_state.staff)}"
+    )
+
+    st.subheader("Priority Patients")
+
+    st.dataframe(
+        st.session_state.patients
+    )
+
+    st.subheader("Open Incidents")
+
+    st.dataframe(
+        st.session_state.incidents
+    )
+
+    st.success(
+        "Dashboard Reviewed During Shift Handover"
+    )
